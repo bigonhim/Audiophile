@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="Stylesheet" href="checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <li>
+            <svg class="menu" onclick="showSidebar()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ececec"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <h3 class="logo">audiophile</h3>
+            <a class="hide" href="/home.html"><p>HOME</p></a>
+            <a class="hide" href="/headphones.html"><p>HEADPHONES</p></a>
+            <a class="hide" href="/speakers.html"><p>SPEAKERS</p></a>
+            <a class="hide" href="/earphones.html"><p>EARPHONES</p></a>
+            <a class="cart" href="/cart.html"><img
+                src="images/cart.png" alt=""></a>
+        </li>
+        <li class="sidebar">
+            <a  class="close"  onclick="closeSidebar()"   href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="30px" fill="#ececec"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a href="/home.html"><p>HOME</p></a>
+            <a href="/headphones.html"><p>HEADPHONES</p></a>
+            <a href="/speakers.html"><p>SPEAKERS</p></a>
+            <a href="/earphones.html"><p>EARPHONES</p></a>
+        </li>
+        
+
+        
+    </header>
+
+    <div class="checkout-sections">
+        <div class="section1">
+
+            <h2>CHECKOUT</h2>
+            <p>BILLING DETAILS</p>
+            <div class="billing">
+
+            <div class="form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            </div>
+
+             <div class="form">
+            <label for="emailAddress">EmailAddress</label>
+            <input type="text" id="emailAddress" name="emailAddress">
+            </div>
+
+            <div class="form">
+            <label for="phoneNumber">Phone-Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber">
+            </div>
+
+            </div>
+ 
+            <p>SHIPPING INFO</p>
+           
+            <div class="shipping">
+
+            <div class="form">
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+            </div>
+
+            <div class="shipping-2">
+
+            <div class="form">
+            <label for="zipcode">ZIPCode</label>
+            <input type="text" id="zipcode" name="zipcode">
+            </div>
+
+            <div class="form">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+            </div>
+
+            <div class="form">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country">
+            </div>
+            </div>
+
+            </div>
+
+            <p>PAYMENT DETAILS</p>
+
+           <div class="pay-options">
+
+            <div class="button">
+            <input  type="checkbox" name="paypal" id="paypal">
+            <label for="paypal"><p>Paypal</p></label>
+
+            </div>
+
+            <div class="button">
+            <input  type="checkbox"   name="mpesa" id="mpesa">
+            <label for="mpesa"><p>Mpesa</p></label>
+            </div>
+        </div>
+
+        </div>
+
+    
+
+        <div class="section2">
+            <h2>SUMMARY</h2>
+            <div class="order-summary">
+                <img src="images/headphones 1.png" alt="photo of order picked">
+                <div class="separate">
+                <h5>XX99 MK</h5>
+                <p>$75.56</p>
+                </div>
+                <p> &#215; 2</p>
+            </div>
+            
+            <hr style="width: 100%;" >
+
+            <div class="total-summary">
+                <p>TOTAL</p>
+                <div  style="display:flex;"  class="flex-total">
+                    <p>$</p>
+                    <p>115.12</p>
+                </div>
+                <p>SHIPPING</p>
+                <p>$50</p>
+                <p>VAT  (INCLUDED)</p>
+                <p>$1.079</p>
+                <p>GRAND TOTAL</p>
+                <div  style="display:flex;"  class="flex-total">
+                    <p>$</p>
+                    <p id="grandTotal" >202.20</p>
+                </div>
+            </div>
+            <div class="paybutton">
+                <a   style="text-decoration: none; color: white;"   href="/thankyou.html"  ><p>CONTINUE & PAY</p></a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <h2>audiophile</h2>
+            <p>Discover the difference with SonicWave, where our commitment to excellence ensures you’ll find the perfect gear to suit your unique audio needs. Experience sound like never before with products that are not only state-of-the-art but also crafted to deliver pure auditory bliss.</p>
+        </div>
+        <div class="footer2">
+            <li>
+                <p>HOME</p>
+                <p>HEADPHONES</p>
+                <p>SPEAKERS</p>
+                <p>EARPHONES</p>
+            </li>
+
+        </div>
+    </div> 
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+         const totalCurrent = document.getElementById('totalCurrent');
+
+
+        function showSidebar(){
+            const Sidebar = document.querySelector('.sidebar')
+            Sidebar.style.display = 'flex'
+        }
+        function closeSidebar(){
+            const Sidebar = document.querySelector('.sidebar')
+            Sidebar.style.display = 'none'
+        } 
+    </script>
+    
+</body>
+</html>
