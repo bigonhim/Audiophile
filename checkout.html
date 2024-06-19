@@ -31,6 +31,7 @@
             <a href="/speakers.html"><p>SPEAKERS</p></a>
             <a href="/earphones.html"><p>EARPHONES</p></a>
         </li>
+        <div class="loader"></div>
         
 
         
@@ -186,6 +187,13 @@
             const Sidebar = document.querySelector('.sidebar')
             Sidebar.style.display = 'none'
         } 
+        window.addEventListener('load',()  =>{
+            const loader = document.querySelector(".loader");
+            loader.classList.add("loader-hidden");
+            loader.addEventListener("transitionend", () =>{
+                document.body.removeChild('loader')
+            })
+        })
     </script>
     
 </body>

@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        
         <li>
             <svg class="menu" onclick="showSidebar()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ececec"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             <h3 class="logo">audiophile</h3>
@@ -26,6 +27,7 @@
             <a href="/speakers.html"><p>SPEAKERS</p></a>
             <a href="/earphones.html"><p>EARPHONES</p></a>
         </li>
+        <div class="loader"></div>
         <div class="cart-box">
             <img  id="close" style="margin-left:13em;"  src="images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg">
             <div class="cart-title">
@@ -169,6 +171,13 @@
         close.addEventListener('click',function close(){
              cart.style.display ='none'
         });
+        window.addEventListener('load',()  =>{
+            const loader = document.querySelector(".loader");
+            loader.classList.add("loader-hidden");
+            loader.addEventListener("transitionend", () =>{
+                document.body.removeChild('loader')
+            })
+        })
     </script>
 </body>
 </html>

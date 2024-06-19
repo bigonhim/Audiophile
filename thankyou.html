@@ -7,6 +7,7 @@
     <title>Gracious</title>
 </head>
 <body>
+    <div class="loader"></div>
     <div class="container">
         <img src="images/check_circle_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" alt="check-circle">
         <div class="thanks-section">
@@ -27,6 +28,17 @@
         <a class="button" href="/index.html">COMPLETE</a>
 
     </div>
+
+
+    <script>
+          window.addEventListener('load',()  =>{
+            const loader = document.querySelector(".loader");
+            loader.classList.add("loader-hidden");
+            loader.addEventListener("transitionend", () =>{
+                document.body.removeChild('loader')
+            })
+        })
+    </script>
     
 </body>
 </html>
