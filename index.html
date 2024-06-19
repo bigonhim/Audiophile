@@ -33,7 +33,7 @@
                 <a href="/speakers.html"><p>SPEAKERS</p></a>
                 <a href="/earphones.html"><p>EARPHONES</p></a>
             </li>
-         
+            <div class="loader"></div>
             <div class="cart-box">
                 <img   id="close" style="margin-left:13em;"  src="images/close_24dp_FILL0_wght400_GRAD0_opsz24.svg">
                 <div class="cart-title">
@@ -184,9 +184,6 @@
             const Sidebar = document.querySelector('.sidebar')
             Sidebar.style.display = 'none'
         } 
-
-
-
         add.addEventListener('click',function add (){
             currentNumber +=1;
 
@@ -202,11 +199,15 @@
         close.addEventListener('click',function close(){
              cart.style.display ='none'
         });
-
-
-      
-
-
+        window.addEventListener('load',()  =>{
+            const loader = document.querySelector(".loader");
+            setTimeout(() => {
+            loader.classList.add("loader-hidden");
+            }, 500);
+            loader.addEventListener("transitionend", () =>{
+                document.body.removeChild('loader')
+            })
+        })
     </script>
 
 </body>
