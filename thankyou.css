@@ -79,6 +79,8 @@ html{
 }
 .button{
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color:var(--white);
     font-weight: 800;
@@ -126,5 +128,16 @@ html{
     }
 }
 
+
+@media (max-width:500px){
+    .container{
+        max-width: 350px;
+    }
+    .button{
+        padding: .8em 6em;
+        text-align: center;
+    }
+    
+}
 
 

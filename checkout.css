@@ -339,3 +339,17 @@ hr{
     }
     
 }
+@media (max-width:500px){
+    .menu{
+        left: 3em;
+    }
+    .cart img{
+        margin-right: 2em;
+    }
+    .section1,.section2{
+        max-width: 350px;
+    }
+    .billing,.shipping-2{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -138,7 +138,7 @@ header a{
     border-radius: 4px;
 }
 .container-1 img{
-    width: 350px;
+    max-width: 350px;
     height: 300px;
 }
 .imgcontent{
@@ -331,6 +331,16 @@ header a{
 @media (max-width:500px){
         .menu{
             left: 3em;
+        }
+        .cart img{
+            margin-right: 2em;
+        }
+        .imgcontainer{
+            padding: .4em .2em;
+        }
+        .container-1{
+            max-width: 350px;
+            margin-left: 1em;
         }
     } 
 }

@@ -25,7 +25,7 @@ html{
     height:100vh;
 }
 .sidebar{
-    color: #191919;
+    color: #191919; 
     height: 100% !important;
     position: fixed;
     top: 0;
@@ -108,8 +108,9 @@ hr{
 .container-1{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px; 
-    margin-top: 4em;
+    margin-top: 6em;
 }
 .content{
     color: #ececec;
@@ -237,7 +238,7 @@ hr{
     background-color:var(--orange);
     color: var(--white);
     font-family: var(--font2);
-    padding: 3em 2em;
+    padding: 3em .5em;
     max-width: 1044px; 
     margin: auto;
     border-radius: 8px;
@@ -436,6 +437,7 @@ hr{
     align-items: center;
     background-color: var(--white);
     transition: opacity 0.75s, visibility 0.75s;
+    z-index: 2000;
 }
 .loader-hidden{
     opacity: 0;
@@ -544,11 +546,6 @@ hr{
       left: 48%;
       transform: translate(-50%, -50%);
       font-size: .7em;
-
-    }
-    .content-image {
-        max-width: 700px;
-        margin: auto;
     }
     .section5{
         flex-direction: column-reverse;
@@ -574,5 +571,36 @@ hr{
     .menu{
         left: 3em;
     }
-}    
+    .cart img{
+        margin-right: 2em;
+    }
+    .content-image{
+        max-width: 250px;
+        margin-right: 4em;
+    }
+    .content-image img{
+        max-width: 350px;
+        height: 290px;
+    }
+    .section2{
+        padding: .7em .1em;
+    }
+    .imagecontent{
+        width: 80%;
+        max-width: 350px;
+    }
+    .section4,.section3,.section2,.section5 {
+        max-width: 350px;
+    }
+    .listener img{
+        max-width: 340px;
+        height: 300px;
+        margin-left: 1.7em;
+    }
+    .section5{
+        margin-top: .1em;
+    }
+
+}  
+
 }
