@@ -98,7 +98,7 @@ hr{
     margin-left: 4em;
 }
 .cart img{
-     width: 25px;
+     width: 30px;
      height: 20px;
      flex: none; 
      position: absolute;
@@ -195,8 +195,8 @@ hr{
     padding: 2em 2em;
 }
 .section2 img{
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 58px;
     background-color:var(--grey-white);
 }
 .order-summary{
