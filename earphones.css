@@ -340,10 +340,5 @@ header a{
         .imgcontainer{
             padding: .4em .2em;
         }
-        .container-1{
-            max-width: 350px;
-            margin-left: 1em;
-            border-radius: 6px;
-        }
     } 
 }
