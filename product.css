@@ -382,7 +382,7 @@ header li a:hover{
 }
 .cart-box{
     position: fixed;
-    max-width: 390px;
+    max-width: 340px;
     background-color: var(--white);
     font-family:var(--font2);
     border-radius: 6px;
@@ -393,9 +393,7 @@ header li a:hover{
     z-index: 1000;
     right: 0;
     top: 0;
-    box-shadow:0px 0px 1px 1px;
-
-    
+    box-shadow:0px 0px 1px 1px;    
 }
 .cart-box img{
     max-width: 50px;
@@ -403,7 +401,7 @@ header li a:hover{
     border-radius: 4px;
 }
 .separate{
-    line-height: .01em;
+    line-height: .7em;
 }
 .total-summary{
     margin-top:.3em ;
@@ -545,9 +543,13 @@ header li a:hover{
     }
     .image-photo,.section5{
         max-width: 350px;
+        height: 250px;
     }
     .listener img{
-        max-width: 350px;
-        height: 250px;
+        max-width: 300px;
+        height: 200px;
+    }
+    .cart-box{
+        margin-right: 1em;
     }
 }

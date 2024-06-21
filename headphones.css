@@ -342,5 +342,8 @@ header a{
             max-width: 350px;
             margin-left: 1em;
         }
+        .cart-box{
+            margin-right: 1em;
+        }
     } 
 }
